@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif
+}
+
+body {
+    background-color: #f1e9df;
+}
+
+#menu {
+    list-style: none;
+    padding: 0;
+    background-color: #978875;
+}
+
+#menu li {
+    display: inline;
+}
+
+#menu li a {
+    color: white;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background .4s;
+    
+}
+
+#menu li a:hover {
+    background-color: #947d60;
+    
+    
+}
+
+.img {
+    text-align: center;
+    padding: 10px;
+}
+
+.copy {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+.box {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #522c17;
+    padding: 15px;
+    border-radius: 20px;
+    width: 30%;
+}
+
+fieldset {
+    border: 3px solid #f1e9df;
+    border-radius: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+
+
+}
+
+legend {
+    border: 1px solid #f1e9df;
+    padding: 10px;
+    text-align: center;
+    background-color: #947d60;
+    border-radius: 10px;
+}
+
+.inputBox {
+    position: relative;
+}
+
+.inputUser {
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+.labelInput {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.inputUser>:focus ~ .labelInput, 
+.inputUser:valid ~ .labelInput {
+    top: -20px;
+    font-size: 12px;
+    color: white;
+}
+
+#data {
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+}
+
+#submit {
+    background: #947d60;
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#submit:hover {
+    background-color: #9e8261aa;
+}
+
+
+footer{
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+footer img {
+    width: 50px;
+    height: 50px;
+}
+
+footer a {
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+footer p{
+    margin-top: 2px;
+}
+
+@media screen and (max-width: 768px) {
+    
+}
+
