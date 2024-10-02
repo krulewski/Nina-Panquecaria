@@ -1,35 +1,57 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nina Panquecaria</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="img/logo1.png"> 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif
+}
 
-</head>
+body {
+    background-color: #f1e9df;
+}
 
-<body>
-    
-    <nav>
-     <ul id="menu">
-            <li><a href="index.html" target="_blank">Home</a></li>
-            <li><a href="empresa.html" target="_blank">A empresa</a></li>
-            <li><a href="equipe.html" target="_blank">A equipe</a></li>
-            <li><a href="historia.html" target="_blank">História</a></li>
-            <li><a href="contato.html" target="_blank">Contato</a></li>
-     </ul>
-    </nav>
-    
-    <div class="img">
-        <img src="img/1.png"><br>
-        <img src="img/2.png"><br>
-        <img src="img/3.png">
-    </div>
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #978875;
+    z-index: 1000;
 
-    <footer>
-        <div class="copy">© 2024 Nina Panquecaria. All rights reserved.</div>
-    </footer>
-    
- </body>
- </html>
+}
+
+#menu {
+    list-style: none;
+    padding: 0;
+    background-color: #978875;
+    text-align: center; /* Para centralizar os itens no menu */
+}
+
+#menu li {
+    display: inline-block; /* Melhor uso de inline-block para controlar o alinhamento */
+}
+
+#menu li a {
+    color: white;
+    padding: 10px 15px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background .4s;
+}
+
+#menu li a:hover {
+    background-color: #947d60;
+}
+
+.img {
+    text-align: center;
+    padding: 10px;
+}
+
+footer {
+    position:static;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
