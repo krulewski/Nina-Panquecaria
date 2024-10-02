@@ -31,10 +31,6 @@ body {
     transition: background .4s;
 }
 
-#menu li a:hover {
-    background-color: #947d60;
-}
-
 footer {
     position:static;
     bottom: 0;
