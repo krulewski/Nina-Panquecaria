@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 * {
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif
+    font-family: 'Open Sans', sans-serif;
 }
 
 body {
@@ -16,7 +17,6 @@ nav {
     width: 100%;
     background-color: #978875;
     z-index: 1000;
-
 }
 
 #menu {
@@ -47,11 +47,74 @@ nav {
     padding: 10px;
 }
 
+img {
+    max-width: 100%; /* A imagem vai se ajustar ao tamanho da tela */
+    height: auto;    /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Estilização extra se necessário */
+}
+
 footer {
-    position:static;
+    position: static;
     bottom: 0;
     left: 0;
     width: 100%;
     text-align: center;
     padding: 10px;
+}
+
+/* Responsividade */
+
+/* Para smartphones (telas menores que 600px) */
+@media (max-width: 600px) { 
+
+    .img {
+        padding: 5px; /* Reduz o padding da imagem */
+    }
+
+    footer {
+        padding: 15px; /* Aumenta o padding do rodapé para melhor toque em dispositivos móveis */
+    }
+}
+
+/* Para tablets (entre 601px e 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    #menu li {
+        display: inline-block;
+        margin: 5px 0; /* Um pouco de margem entre os itens */
+    }
+
+    #menu li a {
+        padding: 12px 20px; /* Ajusta o padding dos links para tablets */
+    }
+
+    .img {
+        padding: 8px; /* Ajuste leve no padding da imagem */
+    }
+
+    footer {
+        padding: 12px; /* Ajusta o padding do rodapé para tablets */
+    }
+}
+
+/* Para desktops (maiores que 1024px) */
+@media (min-width: 1025px) {
+    #menu li {
+        margin: 0 10px; /* Adiciona um espaçamento lateral entre os itens de menu */
+    }
+
+    #menu li a {
+        padding: 10px 15px; /* Mantém o padding original nos desktops */
+    }
+
+    nav {
+        padding: 20px; /* Aumenta o padding do menu para telas maiores */
+    }
+
+    .img {
+        padding: 10px; /* Mantém o padding original da imagem */
+    }
+
+    footer {
+        padding: 10px; /* Mantém o padding original do rodapé */
+    }
 }
