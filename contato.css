@@ -1,196 +1,192 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap'); /* Importa a fonte Open Sans */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+    margin: 0; /* Remove as margens padrão de todos os elementos */
+    padding: 0; /* Remove o preenchimento padrão de todos os elementos */
+    box-sizing: border-box; /* Inclui o padding e border no tamanho total do elemento */
+    font-family: 'Open Sans', sans-serif; /* Define a fonte para todo o documento */
 }
 
 /* Estilos gerais */
 body {
-    background-color: #f1e9df;
-    padding-top: 60px; /* Espaço para o menu fixo */
+    background-color: #f1e9df; /* Define a cor de fundo do corpo da página */
+    padding-top: 60px; /* Espaço para acomodar o menu fixo */
 }
 
 nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #978875;
-    z-index: 1000;
-
+    position: fixed; /* Fixa o menu no topo da página */
+    top: 0; /* Alinha o menu no topo */
+    width: 100%; /* Faz o menu ocupar toda a largura da página */
+    background-color: #978875; /* Define a cor de fundo do menu */
+    z-index: 1000; /* Garante que o menu esteja acima de outros elementos */
 }
 
 #menu {
-    list-style: none;
-    padding: 0;
-    background-color: #978875;
-    text-align: center; /* Para centralizar os itens no menu */
+    list-style: none; /* Remove as bolinhas dos itens de lista */
+    padding: 0; /* Remove o preenchimento padrão da lista */
+    background-color: #978875; /* Cor de fundo do menu */
+    text-align: center; /* Centraliza os itens no menu */
 }
 
 #menu li {
-    display: inline-block; /* Melhor uso de inline-block para controlar o alinhamento */
+    display: inline-block; /* Coloca os itens do menu lado a lado */
 }
 
 #menu li a {
-    color: white;
-    padding: 10px 15px;
-    display: inline-block;
-    text-decoration: none;
-    transition: background .4s;
+    color: white; /* Define a cor do texto dos links como branco */
+    padding: 10px 15px; /* Espaçamento interno dos links */
+    display: inline-block; /* Mantém os links em linha */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    transition: background .4s; /* Define uma transição suave para o fundo ao passar o mouse */
 }
 
 #menu li a:hover {
-    background-color: #947d60;
+    background-color: #947d60; /* Altera a cor de fundo ao passar o mouse sobre os links */
 }
 
 /* Centralizar o conteúdo */
 .container {
-    padding: 20px;
-    text-align: center;
+    padding: 20px; /* Define o espaçamento interno da div container */
+    text-align: center; /* Centraliza o conteúdo dentro da container */
 }
 
 .copy {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-    background-color: #978875;
-    color: white;
+    position: fixed; /* Fixa o rodapé no fundo da página */
+    bottom: 0; /* Alinha o rodapé na parte inferior */
+    left: 0; /* Alinha o rodapé à esquerda */
+    width: 100%; /* Faz o rodapé ocupar toda a largura da página */
+    text-align: center; /* Centraliza o texto no rodapé */
+    padding: 10px; /* Define o espaçamento interno do rodapé */
+    background-color: #978875; /* Define a cor de fundo do rodapé */
+    color: white; /* Define a cor do texto como branco */
 }
 
 .box {
-    background-color: #522c17;
-    color: white;
-    padding: 20px;
-    border-radius: 20px;
-    max-width: 500px;
-    margin: 20px auto;
+    background-color: #522c17; /* Define a cor de fundo da caixa */
+    color: white; /* Define a cor do texto como branco */
+    padding: 20px; /* Define o espaçamento interno da caixa */
+    border-radius: 20px; /* Arredonda as bordas da caixa */
+    max-width: 500px; /* Define a largura máxima da caixa */
+    margin: 20px auto; /* Centraliza a caixa na página com margem automática */
 }
 
 /* Estilizar o formulário */
 fieldset {
-    border: 3px solid #f1e9df;
-    border-radius: 10px;
-    padding: 20px;
+    border: 3px solid #f1e9df; /* Define uma borda ao redor do fieldset */
+    border-radius: 10px; /* Arredonda as bordas do fieldset */
+    padding: 20px; /* Define o espaçamento interno do fieldset */
 }
 
 legend {
-    border: 1px solid #f1e9df;
-    padding: 10px;
-    text-align: center;
-    background-color: #947d60;
-    border-radius: 10px;
+    border: 1px solid #f1e9df; /* Define uma borda ao redor da legenda */
+    padding: 10px; /* Define o espaçamento interno da legenda */
+    text-align: center; /* Centraliza o texto da legenda */
+    background-color: #947d60; /* Define a cor de fundo da legenda */
+    border-radius: 10px; /* Arredonda as bordas da legenda */
 }
 
 .inputBox {
-    position: relative;
-    margin-bottom: 20px;
+    position: relative; /* Define a posição relativa para os elementos dentro da inputBox */
+    margin-bottom: 20px; /* Adiciona um espaçamento inferior */
 }
 
 .inputUser {
-    background: none;
-    border: none;
-    border-bottom: 1px solid white;
-    outline: none;
-    color: white;
-    font-size: 15px;
-    width: 100%;
-    padding: 10px;
+    background: none; /* Remove o fundo do campo de input */
+    border: none; /* Remove as bordas padrão do input */
+    border-bottom: 1px solid white; /* Adiciona uma borda inferior branca */
+    outline: none; /* Remove o contorno ao focar no campo */
+    color: white; /* Define a cor do texto como branco */
+    font-size: 15px; /* Define o tamanho da fonte */
+    width: 100%; /* Faz o input ocupar toda a largura disponível */
+    padding: 10px; /* Define o espaçamento interno do input */
 }
 
 .labelInput {
-    position: absolute;
-    top: 0;
-    left: 0;
-    pointer-events: none;
-    transition: 0.5s;
+    position: absolute; /* Posiciona a label em relação ao input */
+    top: 0; /* Alinha a label ao topo */
+    left: 0; /* Alinha a label à esquerda */
+    pointer-events: none; /* Impede que a label seja clicada */
+    transition: 0.5s; /* Adiciona uma transição suave para a label */
 }
 
 .inputUser:focus ~ .labelInput, 
 .inputUser:valid ~ .labelInput {
-    top: -20px;
-    font-size: 12px;
-    color: white;
+    top: -20px; /* Move a label para cima quando o input estiver focado ou válido */
+    font-size: 12px; /* Diminui o tamanho da fonte da label */
+    color: white; /* Define a cor da label como branco */
 }
 
 #data {
-    border: none;
-    padding: 8px;
-    border-radius: 10px;
-    outline: none;
-    font-size: 15px;
-    width: 100%;
+    border: none; /* Remove as bordas padrão */
+    padding: 8px; /* Define o espaçamento interno */
+    border-radius: 10px; /* Arredonda as bordas */
+    outline: none; /* Remove o contorno ao focar no campo */
+    font-size: 15px; /* Define o tamanho da fonte */
+    width: 100%; /* Faz o input ocupar toda a largura disponível */
 }
 
 #submit {
-    background: #947d60;
-    width: 100%;
-    border: none;
-    padding: 15px;
-    color: white;
-    font-size: 15px;
-    cursor: pointer;
-    border-radius: 10px;
+    background: #947d60; /* Define a cor de fundo do botão de submissão */
+    width: 100%; /* Faz o botão ocupar toda a largura disponível */
+    border: none; /* Remove as bordas do botão */
+    padding: 15px; /* Define o espaçamento interno do botão */
+    color: white; /* Define a cor do texto do botão como branco */
+    font-size: 15px; /* Define o tamanho da fonte */
+    cursor: pointer; /* Altera o cursor para o ícone de clique */
+    border-radius: 10px; /* Arredonda as bordas do botão */
 }
 
 #submit:hover {
-    background-color: #9e8261aa;
+    background-color: #9e8261aa; /* Altera a cor de fundo do botão ao passar o mouse */
 }
 
 /* Footer */
 footer {
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    background-color: #978875;
+    display: flex; /* Utiliza o flexbox para alinhar os itens */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    padding: 10px; /* Define o espaçamento interno do footer */
+    background-color: #978875; /* Define a cor de fundo do footer */
 }
 
 footer img {
-    width: 50px;
-    height: 50px;
+    width: 50px; /* Define a largura das imagens no footer */
+    height: 50px; /* Define a altura das imagens no footer */
 }
 
 footer a {
-    margin: 10px;
-    text-align: center;
-    text-decoration: none;
-    color: white;
+    margin: 10px; /* Define a margem ao redor dos links no footer */
+    text-align: center; /* Centraliza o texto dos links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: white; /* Define a cor dos links como branco */
 }
 
 footer p {
-    margin-top: 2px;
+    margin-top: 2px; /* Define uma margem superior mínima para os parágrafos no footer */
 }
 
 /* Responsividade */
 
 /* Para dispositivos móveis */
 @media screen and (max-width: 768px) {
-    
-
     #menu li {
-        margin: 10px 0;
+        margin: 10px 0; /* Adiciona margem entre os itens do menu em telas pequenas */
     }
 
     .box {
-        width: 90%;
-        padding: 15px;
+        width: 90%; /* Ajusta a largura da caixa para 90% em dispositivos móveis */
+        padding: 15px; /* Reduz o espaçamento interno da caixa */
     }
 }
 
 /* Para tablets */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-    
     .box {
-        width: 70%;
+        width: 70%; /* Ajusta a largura da caixa para 70% em tablets */
     }
 }
 
 /* Para desktops */
 @media screen and (min-width: 1025px) {
     .box {
-        width: 30%;
+        width: 30%; /* Ajusta a largura da caixa para 30% em desktops */
     }
 }
