@@ -50,14 +50,14 @@ nav {
 }
 
 .copy {
-    position: fixed; /* Fixa o rodapé no fundo da página */
+    position: fixed; /* Fixa o rodapé no fundo da página */  
     bottom: 0; /* Alinha o rodapé na parte inferior */
     left: 0; /* Alinha o rodapé à esquerda */
     width: 100%; /* Faz o rodapé ocupar toda a largura da página */
     text-align: center; /* Centraliza o texto no rodapé */
     padding: 10px; /* Define o espaçamento interno do rodapé */
-    background-color: #978875; /* Define a cor de fundo do rodapé */
-    color: white; /* Define a cor do texto como branco */
+    background-color: #f1e9df; /* Define a cor de fundo do rodapé */
+    color: black; /* Define a cor do texto como branco */
 }
 
 .box {
@@ -67,6 +67,7 @@ nav {
     border-radius: 20px; /* Arredonda as bordas da caixa */
     max-width: 500px; /* Define a largura máxima da caixa */
     margin: 20px auto; /* Centraliza a caixa na página com margem automática */
+    margin-top: -45px;
 }
 
 /* Estilizar o formulário */
@@ -144,7 +145,7 @@ footer {
     display: flex; /* Utiliza o flexbox para alinhar os itens */
     justify-content: center; /* Centraliza os itens horizontalmente */
     padding: 10px; /* Define o espaçamento interno do footer */
-    background-color: #978875; /* Define a cor de fundo do footer */
+    background-color: #f1e9df; /* Define a cor de fundo do footer */
 }
 
 footer img {
