@@ -40,6 +40,10 @@ nav {
     transition: background .4s; /* Define uma transição suave para o fundo ao passar o mouse */
 }
 
+#menu li a:hover {
+    background-color: #947d60; /* Altera a cor de fundo ao passar o mouse sobre os links */
+}
+
 .img {
     text-align: center;
     padding: 10px;
@@ -102,10 +106,6 @@ footer {
 
     #menu li a {
         padding: 10px 15px; /* Mantém o padding original nos desktops */
-    }
-
-    nav {
-        padding: 20px; /* Aumenta o padding do menu para telas maiores */
     }
 
     .img {
