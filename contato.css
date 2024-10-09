@@ -157,7 +157,7 @@ footer a {
     margin: 10px; /* Define a margem ao redor dos links no footer */
     text-align: center; /* Centraliza o texto dos links */
     text-decoration: none; /* Remove o sublinhado dos links */
-    color: white; /* Define a cor dos links como branco */
+    color: black; /* Define a cor dos links como branco */
 }
 
 footer p {
@@ -168,7 +168,9 @@ footer p {
 
 /* Para dispositivos móveis */
 @media screen and (max-width: 768px) {
-   
+    #menu li {
+        margin: 10px 0; /* Adiciona margem entre os itens do menu em telas pequenas */
+    }
 
     .box {
         width: 90%; /* Ajusta a largura da caixa para 90% em dispositivos móveis */
