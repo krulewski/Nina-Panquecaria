@@ -35,17 +35,8 @@ body {
     background-color: #947d60; /* Altera a cor de fundo ao passar o mouse sobre os links */
 }
 
-footer {
-    position: static; /* Define o rodapé em posição estática */
-    bottom: 0; /* Alinha o rodapé ao fundo da página */
-    left: 0; /* Alinha o rodapé à esquerda */
-    width: 100%; /* Faz o rodapé ocupar toda a largura da página */
-    text-align: center; /* Centraliza o conteúdo do rodapé */
-    padding: 29px; /* Define o espaçamento interno do rodapé */
-}
-
 .copy {
-    position: fixed; /* Fixa o rodapé no fundo da página */  
+    position: static; /* Fixa o rodapé no fundo da página */  
     bottom: 0; /* Alinha o rodapé na parte inferior */
     left: 0; /* Alinha o rodapé à esquerda */
     width: 100%; /* Faz o rodapé ocupar toda a largura da página */
@@ -55,10 +46,14 @@ footer {
     color: black; /* Define a cor do texto como branco */
 }
 
-footer p {
+.final p {
     font-size: 17px; /* Define o tamanho da fonte dos parágrafos do rodapé */
     color: #522c17; /* Define a cor do texto */
     padding: 0px; /* Define o espaçamento interno dos parágrafos */
+    position: static; /* Define o rodapé em posição estática */
+    width: 100%; /* Faz o rodapé ocupar toda a largura da página */
+    text-align: center; /* Centraliza o conteúdo do rodapé */
+    padding: 39px; /* Define o espaçamento interno do rodapé */
 }
 
 header h1 {
