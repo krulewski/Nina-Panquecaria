@@ -41,24 +41,36 @@ footer {
     left: 0; /* Alinha o rodapé à esquerda */
     width: 100%; /* Faz o rodapé ocupar toda a largura da página */
     text-align: center; /* Centraliza o conteúdo do rodapé */
+    padding: 29px; /* Define o espaçamento interno do rodapé */
+}
+
+.copy {
+    position: fixed; /* Fixa o rodapé no fundo da página */  
+    bottom: 0; /* Alinha o rodapé na parte inferior */
+    left: 0; /* Alinha o rodapé à esquerda */
+    width: 100%; /* Faz o rodapé ocupar toda a largura da página */
+    text-align: center; /* Centraliza o texto no rodapé */
     padding: 10px; /* Define o espaçamento interno do rodapé */
+    background-color: #f1e9df; /* Define a cor de fundo do rodapé */
+    color: black; /* Define a cor do texto como branco */
 }
 
 footer p {
-    font-size: 25px; /* Define o tamanho da fonte dos parágrafos do rodapé */
+    font-size: 17px; /* Define o tamanho da fonte dos parágrafos do rodapé */
     color: #522c17; /* Define a cor do texto */
-    padding: 45px; /* Define o espaçamento interno dos parágrafos */
+    padding: 0px; /* Define o espaçamento interno dos parágrafos */
 }
 
 header h1 {
     text-align: center; /* Centraliza o título */
-    font-size: 65px; /* Define o tamanho da fonte do título */
+    font-size: 45px; /* Define o tamanho da fonte do título */
     color: #522c17; /* Define a cor do texto do título */
 }
 
 header p {
     text-align: center; /* Centraliza o parágrafo */
-    font-size: 25px; /* Define o tamanho da fonte do parágrafo */
+    text-justify: inter-word;
+    font-size: 18px; /* Define o tamanho da fonte do parágrafo */
     color: #522c17; /* Define a cor do texto do parágrafo */
 }
 
