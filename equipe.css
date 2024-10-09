@@ -1,6 +1,7 @@
 /* Estilos gerais (já existentes) */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap'); /* Importa a fonte 'Open Sans' */
 
+/* Reseta margens, espaçamentos e define fonte padrão */
 * {
     margin: 0 auto; /* Centraliza todos os elementos horizontalmente */
     padding: 0; /* Remove o preenchimento padrão de todos os elementos */
@@ -8,33 +9,48 @@
     font-family: 'Open Sans', sans-serif; /* Define a fonte padrão do documento */
 }
 
+/* Define o fundo da página */
 body {
     background-color: #f1e9df; /* Define a cor de fundo do corpo da página */
 }
 
-#menu {
-    list-style: none; /* Remove as marcas de lista dos itens de menu */
-    padding: 0; /* Remove o preenchimento padrão do menu */
+/* Estilos do menu de navegação */
+nav {
+    position: fixed; /* Fixa o menu no topo da página */
+    top: 0; /* Alinha o menu no topo */
+    width: 100%; /* Faz o menu ocupar toda a largura da página */
     background-color: #978875; /* Define a cor de fundo do menu */
-    text-align: center; /* Centraliza os itens do menu */
+    z-index: 1000; /* Garante que o menu esteja acima de outros elementos */
 }
 
+/* Estilo para a lista de navegação (menu) */
+#menu {
+    list-style: none; /* Remove as bolinhas dos itens de lista */
+    padding: 0; /* Remove o preenchimento padrão da lista */
+    background-color: #978875; /* Cor de fundo do menu */
+    text-align: center; /* Centraliza os itens no menu */
+}
+
+/* Itens da lista no menu */
 #menu li {
-    display: inline-block; /* Exibe os itens de menu lado a lado */
+    display: inline-block; /* Coloca os itens do menu lado a lado */
 }
 
+/* Estilo dos links do menu */
 #menu li a {
     color: white; /* Define a cor do texto dos links como branco */
-    padding: 10px 15px; /* Define o espaçamento interno dos links */
-    display: inline-block; /* Faz o link se comportar como um elemento inline-block */
+    padding: 10px 15px; /* Espaçamento interno dos links */
+    display: inline-block; /* Mantém os links em linha */
     text-decoration: none; /* Remove o sublinhado dos links */
-    transition: background .4s; /* Adiciona uma transição suave ao fundo dos links */
+    transition: background .4s; /* Define uma transição suave para o fundo ao passar o mouse */
 }
 
+/* Efeito ao passar o mouse sobre os links do menu */
 #menu li a:hover {
     background-color: #947d60; /* Altera a cor de fundo ao passar o mouse sobre os links */
 }
 
+/* Estilo do rodapé */
 .copy {
     position: static; /* Fixa o rodapé no fundo da página */  
     bottom: 0; /* Alinha o rodapé na parte inferior */
@@ -43,9 +59,10 @@ body {
     text-align: center; /* Centraliza o texto no rodapé */
     padding: 10px; /* Define o espaçamento interno do rodapé */
     background-color: #f1e9df; /* Define a cor de fundo do rodapé */
-    color: black; /* Define a cor do texto como branco */
+    color: black; /* Define a cor do texto como preto */
 }
 
+/* Estilos para o texto no rodapé */
 .final p {
     font-size: 17px; /* Define o tamanho da fonte dos parágrafos do rodapé */
     color: #522c17; /* Define a cor do texto */
@@ -53,22 +70,26 @@ body {
     position: static; /* Define o rodapé em posição estática */
     width: 100%; /* Faz o rodapé ocupar toda a largura da página */
     text-align: center; /* Centraliza o conteúdo do rodapé */
-    padding: 39px; /* Define o espaçamento interno do rodapé */
+    padding: 18px; /* Define o espaçamento interno do rodapé */
 }
 
+/* Estilos para o título no cabeçalho */
 header h1 {
     text-align: center; /* Centraliza o título */
     font-size: 45px; /* Define o tamanho da fonte do título */
     color: #522c17; /* Define a cor do texto do título */
+    padding: 40px; /* Define o espaçamento interno */
 }
 
+/* Estilos para os parágrafos no cabeçalho */
 header p {
     text-align: center; /* Centraliza o parágrafo */
-    text-justify: inter-word;
+    text-justify: inter-word; /* Justifica o texto entre palavras */
     font-size: 18px; /* Define o tamanho da fonte do parágrafo */
     color: #522c17; /* Define a cor do texto do parágrafo */
 }
 
+/* Estilos para as imagens */
 img {
     width: 150px; /* Define a largura das imagens */
     height: 150px; /* Define a altura das imagens */
@@ -77,12 +98,14 @@ img {
     margin-top: -55px; /* Adiciona uma margem superior negativa */
 }
 
+/* Estilos para o container principal */
 .container {
     display: flex; /* Utiliza o flexbox para alinhar os elementos */
     justify-content: center; /* Centraliza o conteúdo */
     flex-wrap: wrap; /* Permite que os cards se empilhem em telas menores */
 }
 
+/* Estilos dos cards */
 .card {
     width: 300px; /* Define a largura dos cards */
     height: 500px; /* Define a altura dos cards */
@@ -92,17 +115,20 @@ img {
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); /* Adiciona uma sombra aos cards */
 }
 
+/* Estilos para centralizar as imagens nos cards */
 .imagem {
     display: flex; /* Utiliza o flexbox para alinhar a imagem */
     justify-content: center; /* Centraliza a imagem */
 }
 
+/* Estilos para o texto dentro dos cards */
 .texto {
     color: white; /* Define a cor do texto como branco */
     text-align: center; /* Centraliza o texto */
     font-size: 20px; /* Define o tamanho da fonte do texto */
 }
 
+/* Estilos para parágrafos dentro de divs */
 div p {
     color: white; /* Define a cor do texto dos parágrafos dentro de divs como branco */
     font-size: 15px; /* Define o tamanho da fonte dos parágrafos */
