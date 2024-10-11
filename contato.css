@@ -50,14 +50,12 @@ nav {
 }
 
 .copy {
-    position: fixed; /* Fixa o rodapé no fundo da página */  
-    bottom: 0; /* Alinha o rodapé na parte inferior */
-    left: 0; /* Alinha o rodapé à esquerda */
-    width: 100%; /* Faz o rodapé ocupar toda a largura da página */
     text-align: center; /* Centraliza o texto no rodapé */
     padding: 10px; /* Define o espaçamento interno do rodapé */
     background-color: #f1e9df; /* Define a cor de fundo do rodapé */
-    color: black; /* Define a cor do texto como branco */
+    color: black; /* Define a cor do texto como preto */
+    position: static; /* Deixa o rodapé como parte do fluxo normal da página */
+    width: 100%; /* Faz o rodapé ocupar toda a largura da página */
 }
 
 .box {
@@ -140,36 +138,30 @@ legend {
     background-color: #9e8261aa; /* Altera a cor de fundo do botão ao passar o mouse */
 }
 
-/* Footer */
-footer {
-    display: flex; /* Utiliza o flexbox para alinhar os itens */
-    justify-content: center; /* Centraliza os itens horizontalmente */
-    padding: 10px; /* Define o espaçamento interno do footer */
-    background-color: #f1e9df; /* Define a cor de fundo do footer */
+.final {
+    color: #522c17;
+    font-size: 17px;
+    position: static;
+    width: 100%;
+    text-align: center;
+    padding: 11px;
+    display: flex; /* Alinha os itens em uma linha */
+    justify-content: center; /* Centraliza os ícones na horizontal */
+    gap: 20px; /* Espaçamento entre os ícones */
 }
 
-footer img {
+.final img {
     width: 50px; /* Define a largura das imagens no footer */
     height: 50px; /* Define a altura das imagens no footer */
-}
-
-footer a {
-    margin: 10px; /* Define a margem ao redor dos links no footer */
-    text-align: center; /* Centraliza o texto dos links */
-    text-decoration: none; /* Remove o sublinhado dos links */
-    color: black; /* Define a cor dos links como branco */
-}
-
-footer p {
-    margin-top: 2px; /* Define uma margem superior mínima para os parágrafos no footer */
 }
 
 /* Responsividade */
 
 /* Para dispositivos móveis */
 @media screen and (max-width: 768px) {
-    #menu li {
-        margin: 10px 0; /* Adiciona margem entre os itens do menu em telas pequenas */
+    #menu li a {
+        padding: 6px; /* Reduz o espaçamento interno dos links do menu */
+        font-size: 13px;
     }
 
     .box {
@@ -183,6 +175,12 @@ footer p {
     .box {
         width: 70%; /* Ajusta a largura da caixa para 70% em tablets */
     }
+
+    #menu li a {
+        padding: 6px; /* Reduz o espaçamento interno dos links do menu */
+        font-size: 13px;
+    }
+
 }
 
 /* Para desktops */
