@@ -153,7 +153,8 @@ div p {
     }
 
     #menu li a {
-        padding: 10px; /* Reduz o espaçamento interno dos links do menu */
+        padding: 6px; /* Reduz o espaçamento interno dos links do menu */
+        font-size: 13px;
     }
 
     img {
@@ -175,6 +176,11 @@ div p {
 
     header p {
         font-size: 22px; /* Ajusta o tamanho do parágrafo */
+    }
+
+    #menu li a {
+        padding: 6px; /* Reduz o espaçamento interno dos links do menu */
+        font-size: 13px;
     }
 }
 
