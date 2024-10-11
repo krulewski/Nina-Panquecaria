@@ -73,6 +73,12 @@ footer {
         padding: 5px; /* Reduz o padding da imagem */
     }
 
+    #menu li a {
+        padding: 6px; /* Reduz o espaçamento interno dos links do menu */
+        font-size: 13px;
+    }
+
+
     footer {
         padding: 15px; /* Aumenta o padding do rodapé para melhor toque em dispositivos móveis */
     }
@@ -80,13 +86,10 @@ footer {
 
 /* Para tablets (entre 601px e 1024px) */
 @media (min-width: 601px) and (max-width: 1024px) {
-    #menu li {
-        display: inline-block;
-        margin: 5px 0; /* Um pouco de margem entre os itens */
-    }
 
     #menu li a {
-        padding: 12px 20px; /* Ajusta o padding dos links para tablets */
+        padding: 6px; /* Reduz o espaçamento interno dos links do menu */
+        font-size: 13px;
     }
 
     .img {
@@ -105,7 +108,7 @@ footer {
     }
 
     #menu li a {
-        padding: 10px 15px; /* Mantém o padding original nos desktops */
+        padding: 10px 6px; /* Mantém o padding original nos desktops */
     }
 
     .img {
