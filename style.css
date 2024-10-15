@@ -1,67 +1,83 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap'); /* Importa a fonte 'Open Sans' do Google Fonts */
 
 * {
-    margin: 0 auto;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+    margin: 0; /* Remove a margem padrão de todos os elementos */
+    padding: 0; /* Remove o padding padrão de todos os elementos */
+    box-sizing: border-box; /* Inclui padding e bordas dentro do tamanho total dos elementos */
+    font-family: 'Open Sans', sans-serif; /* Define a fonte 'Open Sans' para todos os elementos */
 }
 
 body {
     background-color: #f1e9df; /* Define a cor de fundo do corpo da página */
-    padding-top: 60px; /* Espaço para acomodar o menu fixo */
 }
 
-nav {
-    position: fixed; /* Fixa o menu no topo da página */
-    top: 0; /* Alinha o menu no topo */
-    width: 100%; /* Faz o menu ocupar toda a largura da página */
-    background-color: #978875; /* Define a cor de fundo do menu */
-    z-index: 1000; /* Garante que o menu esteja acima de outros elementos */
-    
+header {
+    background-color: black; /* Define a cor de fundo do cabeçalho */
+    box-shadow: 0px 3px 10px #464646; /* Adiciona uma sombra ao cabeçalho */
 }
 
-#menu {
-    list-style: none; /* Remove as bolinhas dos itens de lista */
-    padding: 0; /* Remove o preenchimento padrão da lista */
-    background-color: #978875; /* Cor de fundo do menu */
-    text-align: center; /* Centraliza os itens no menu */
+.nav-bar {
+    display: flex; /* Usa o modelo de layout flexível */
+    justify-content: space-between; /* Distribui os itens com espaço entre eles */
+    padding: 1.5rem 6rem; /* Define o espaçamento interno da barra de navegação */
 }
 
-#menu li {
-    display: inline-block; /* Coloca os itens do menu lado a lado */
+.logo {
+    display: flex; /* Exibe o logo como flexível */
+    align-items: center; /* Alinha os itens no centro verticalmente */
+    width: 150px; /* Define a largura das imagens */
+    height: 80px; /* Define a altura das imagens */
 }
 
-#menu li a {
-    color: white; /* Define a cor do texto dos links como branco */
-    padding: 10px 15px; /* Espaçamento interno dos links */
-    display: inline-block; /* Mantém os links em linha */
-    text-decoration: none; /* Remove o sublinhado dos links */
-    transition: background .4s; /* Define uma transição suave para o fundo ao passar o mouse */
+.nav-list {
+    display: flex; /* Exibe os itens da lista de navegação como flexíveis */
+    align-items: center; /* Alinha os itens no centro verticalmente */
 }
 
-#menu li a:hover {
-    background-color: #947d60; /* Altera a cor de fundo ao passar o mouse sobre os links */
+.nav-list ul {
+    display: flex; /* Exibe os itens da lista como flexíveis */
+    justify-content: center; /* Centraliza os itens dentro do ul */
+    list-style: none; /* Remove os marcadores da lista */
+}
+
+.nav-item {
+    margin: 0 15px; /* Adiciona margem lateral entre os itens da lista de navegação */
+    font-size: 22px; /* Define o tamanho da fonte dos itens da lista */
+}
+
+.nav-link {
+    text-decoration: none; /* Remove a decoração do texto (sublinhado) dos links */
+    font: 1.15rem; /* Define o tamanho da fonte */
+    color: #FFF; /* Define a cor do texto como branco */
+    font-weight: 400; /* Define a espessura da fonte */
+}
+
+.mobile-menu-icon {
+    display: none; /* Esconde o ícone do menu mobile por padrão */
+}
+
+.mobile-menu {
+    display: none; /* Esconde o menu mobile por padrão */
 }
 
 .img {
-    text-align: center;
-    padding: 10px;
+    text-align: center; /* Centraliza o conteúdo dentro da imagem */
+    padding: 10px; /* Adiciona padding ao redor da imagem */
 }
 
 img {
-    max-width: 100%; /* A imagem vai se ajustar ao tamanho da tela */
-    height: auto;    /* Mantém a proporção da imagem */
-    border-radius: 10px; /* Estilização extra se necessário */
+    max-width: 100%; /* Faz com que a imagem se ajuste ao tamanho máximo da tela */
+    height: auto;    /* Mantém a proporção original da imagem */
+    border-radius: 10px; /* Arredonda os cantos da imagem */
 }
 
 footer {
-    position: static;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    padding: 10px;
+    position: static; /* Define o rodapé como estático */
+    bottom: 0; /* Posiciona o rodapé no fundo da página */
+    left: 0; /* Alinha o rodapé à esquerda */
+    width: 100%; /* Faz o rodapé ocupar toda a largura da tela */
+    text-align: center; /* Centraliza o texto do rodapé */
+    padding: 10px; /* Adiciona padding ao rodapé */
 }
 
 /* Responsividade */
@@ -70,52 +86,131 @@ footer {
 @media (max-width: 600px) { 
 
     .img {
-        padding: 5px; /* Reduz o padding da imagem */
+        padding: 5px; /* Reduz o padding ao redor da imagem para telas menores */
     }
-
-    #menu li a {
-        padding: 6px; /* Reduz o espaçamento interno dos links do menu */
-        font-size: 13px;
-    }
-
 
     footer {
-        padding: 15px; /* Aumenta o padding do rodapé para melhor toque em dispositivos móveis */
+        padding: 15px; /* Aumenta o padding no rodapé para melhor toque em dispositivos móveis */
+    }
+
+    .nav-bar {
+        padding: 1.5rem 4rem; /* Ajusta o padding da barra de navegação em telas menores */
+    }
+
+    .nav-item {
+        display: none; /* Esconde os itens de navegação em telas menores */
+        font-size: 15px; /* Define um tamanho de fonte menor para itens de navegação */
+    }
+
+    .login-button {
+        display: none; /* Esconde o botão de login em telas menores */
+    }
+
+    .mobile-menu-icon {
+        display: block; /* Exibe o ícone do menu mobile */
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent; /* Remove o fundo do botão do ícone do menu mobile */
+        border: none; /* Remove a borda do botão */
+        cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    }
+
+    .mobile-menu ul {
+        display: flex; /* Exibe o menu mobile como flexível */
+        flex-direction: column; /* Organiza os itens da lista em coluna */
+        text-align: center; /* Centraliza o texto dos itens */
+        padding-bottom: 1rem; /* Adiciona padding no final do menu */
+    }
+
+    .mobile-menu .nav-item {
+        display: block; /* Exibe os itens de navegação no menu mobile */
+        padding: 1.2rem; /* Adiciona padding aos itens de navegação no menu mobile */
+    }
+
+    .mobile-menu .login-button {
+        display: block; /* Exibe o botão de login no menu mobile */
+        padding: 1rem 2rem; /* Adiciona padding ao botão de login */
+    }
+
+    .mobile-menu .login-button {
+        width: 100%; /* Define que o botão de login ocupe 100% da largura */
+    }
+
+    .open {
+        display: block; /* Exibe o menu quando o ícone é clicado */
     }
 }
 
 /* Para tablets (entre 601px e 1024px) */
 @media (min-width: 601px) and (max-width: 1024px) {
 
-    #menu li a {
-        padding: 6px; /* Reduz o espaçamento interno dos links do menu */
-        font-size: 13px;
-    }
-
     .img {
-        padding: 8px; /* Ajuste leve no padding da imagem */
+        padding: 8px; /* Ajusta levemente o padding ao redor da imagem em tablets */
     }
 
     footer {
         padding: 12px; /* Ajusta o padding do rodapé para tablets */
     }
+
+    .nav-bar {
+        padding: 1.5rem 4rem; /* Ajusta o padding da barra de navegação em telas menores */
+    }
+
+    .nav-item {
+        display: none; /* Esconde os itens de navegação em telas menores */
+        font-size: 15px; /* Define um tamanho de fonte menor para itens de navegação */
+    }
+
+    .login-button {
+        display: none; /* Esconde o botão de login em telas menores */
+    }
+
+    .mobile-menu-icon {
+        display: block; /* Exibe o ícone do menu mobile */
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent; /* Remove o fundo do botão do ícone do menu mobile */
+        border: none; /* Remove a borda do botão */
+        cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    }
+
+    .mobile-menu ul {
+        display: flex; /* Exibe o menu mobile como flexível */
+        flex-direction: column; /* Organiza os itens da lista em coluna */
+        text-align: center; /* Centraliza o texto dos itens */
+        padding-bottom: 1rem; /* Adiciona padding no final do menu */
+    }
+
+    .mobile-menu .nav-item {
+        display: block; /* Exibe os itens de navegação no menu mobile */
+        padding: 1.2rem; /* Adiciona padding aos itens de navegação no menu mobile */
+    }
+
+    .mobile-menu .login-button {
+        display: block; /* Exibe o botão de login no menu mobile */
+        padding: 1rem 2rem; /* Adiciona padding ao botão de login */
+    }
+
+    .mobile-menu .login-button {
+        width: 100%; /* Define que o botão de login ocupe 100% da largura */
+    }
+
+    .open {
+        display: block; /* Exibe o menu quando o ícone é clicado */
+    }
 }
 
 /* Para desktops (maiores que 1024px) */
 @media (min-width: 1025px) {
-    #menu li {
-        margin: 0 10px; /* Adiciona um espaçamento lateral entre os itens de menu */
-    }
-
-    #menu li a {
-        padding: 10px 6px; /* Mantém o padding original nos desktops */
-    }
-
     .img {
-        padding: 10px; /* Mantém o padding original da imagem */
+        padding: 10px; /* Mantém o padding original ao redor da imagem */
     }
 
     footer {
         padding: 10px; /* Mantém o padding original do rodapé */
     }
+
+    
 }
