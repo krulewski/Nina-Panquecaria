@@ -6,24 +6,45 @@
     <title>Nina Panquecaria</title>
     <link rel="stylesheet" href="equipe.css">
     <link rel="shortcut icon" href="img/logo1.png"> 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 
 <body>
     
-    <nav>
-        <ul id="menu">
-            <li><a href="index.html" target="_blank">Home</a></li>
-            <li><a href="empresa.html" target="_blank">A empresa</a></li>
-            <li><a href="equipe.html" target="_blank">A equipe</a></li>
-            <li><a href="historia.html" target="_blank">História</a></li>
-            <li><a href="contato.html" target="_blank">Contato</a></li>
-        </ul>
-    </nav>
-
     <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1><img src="img/Icon.png"></h1>
+            </div>
+            
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="index.html" target="_blank" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="empresa.html" target="_blank" class="nav-link">A empresa</a></li>
+                    <li class="nav-item"><a href="equipe.html" target="_blank" class="nav-link">A equipe</a></li>
+                    <li class="nav-item"><a href="historia.html" target="_blank" class="nav-link">História</a></li>
+                    <li class="nav-item"><a href="contato.html" target="_blank" class="nav-link">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="img/menu_white_36dp.svg"></button>
+            </div>
+        </nav>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="index.html" target="_blank" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="empresa.html" target="_blank" class="nav-link">A empresa</a></li>
+                <li class="nav-item"><a href="equipe.html" target="_blank" class="nav-link">A equipe</a></li>
+                <li class="nav-item"><a href="historia.html" target="_blank" class="nav-link">História</a></li>
+                <li class="nav-item"><a href="contato.html" target="_blank" class="nav-link">Contato</a></li>
+            </ul>
+    </header>
+        
+
+    
         <h1>CONHEÇA NOSSA EQUIPE!</h1>
         
         <p>
@@ -34,10 +55,10 @@
             nossas panquecas exclusivas.
         </p><br><br><br><br>
         
-        <div class="container">
+        <div class="container"> 
             <div class="card">
                 <div class="imagem">
-                    <img src="img/Francielli.jpeg" alt="">
+                    <img src="img/Francielli.jpeg" alt="" class="img">
                 </div>
                 <div class="texto">
                     <h2>Francielli Queiroz</h2>
@@ -49,7 +70,7 @@
 
             <div class="card">
                 <div class="imagem">
-                    <img src="img/Guilherme.jpeg" alt="">
+                    <img src="img/Guilherme.jpeg" alt="" class="img">
                 </div>
                 <div class="texto">
                     <h2>Guilherme Martins</h2>
@@ -61,7 +82,7 @@
 
             <div class="card">
                 <div class="imagem">
-                    <img src="img/Lara.jpeg" alt="">
+                    <img src="img/Lara.jpeg" alt="" class="img">
                 </div>
                 <div class="texto">
                     <h2>Lara Favato</h2>
@@ -75,7 +96,7 @@
 
             <div class="card">
                 <div class="imagem">
-                    <img src="img/Marinna.jpeg" alt="">
+                    <img src="img/Marinna.jpeg" alt="" class="img">
                 </div>
                 <div class="texto">
                     <h2>Marinna Biazon</h2>
@@ -89,7 +110,7 @@
 
 
         
-    </header>
+    
 
     <div class="final">
         <p>Juntos, somos a Nina Panquecaria e estamos aqui para trazer mais doçura ao seu dia.</p><br>
@@ -99,5 +120,6 @@
         <div class="copy">© 2024 Nina Panquecaria. All rights reserved.</div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
