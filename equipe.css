@@ -3,10 +3,10 @@
 
 /* Reseta margens, espaçamentos e define fonte padrão */
 * {
-    margin: 0 auto; /* Centraliza todos os elementos horizontalmente */
-    padding: 0; /* Remove o preenchimento padrão de todos os elementos */
-    box-sizing: border-box; /* Inclui o padding e border no tamanho total do elemento */
-    font-family: 'Open Sans', sans-serif; /* Define a fonte padrão do documento */
+    margin: 0; /* Remove a margem de todos os elementos */
+    padding: 0; /* Remove o preenchimento (padding) de todos os elementos */
+    box-sizing: border-box; /* Inclui o padding e borda no tamanho total do elemento */
+    font-family: 'Open Sans', sans-serif; /* Define a fonte padrão como 'Open Sans' */
 }
 
 /* Define o fundo da página */
@@ -14,47 +14,11 @@ body {
     background-color: #f1e9df; /* Define a cor de fundo do corpo da página */
 }
 
-/* Estilos do menu de navegação */
-nav {
-    position: fixed; /* Fixa o menu no topo da página */
-    top: 0; /* Alinha o menu no topo */
-    width: 100%; /* Faz o menu ocupar toda a largura da página */
-    background-color: #978875; /* Define a cor de fundo do menu */
-    z-index: 1000; /* Garante que o menu esteja acima de outros elementos */
-}
-
-/* Estilo para a lista de navegação (menu) */
-#menu {
-    list-style: none; /* Remove as bolinhas dos itens de lista */
-    padding: 0; /* Remove o preenchimento padrão da lista */
-    background-color: #978875; /* Cor de fundo do menu */
-    text-align: center; /* Centraliza os itens no menu */
-}
-
-/* Itens da lista no menu */
-#menu li {
-    display: inline-block; /* Coloca os itens do menu lado a lado */
-}
-
-/* Estilo dos links do menu */
-#menu li a {
-    color: white; /* Define a cor do texto dos links como branco */
-    padding: 10px 15px; /* Espaçamento interno dos links */
-    display: inline-block; /* Mantém os links em linha */
-    text-decoration: none; /* Remove o sublinhado dos links */
-    transition: background .4s; /* Define uma transição suave para o fundo ao passar o mouse */
-}
-
-/* Efeito ao passar o mouse sobre os links do menu */
-#menu li a:hover {
-    background-color: #947d60; /* Altera a cor de fundo ao passar o mouse sobre os links */
-}
-
 /* Estilo do rodapé */
 .copy {
-    position: static; /* Fixa o rodapé no fundo da página */  
-    bottom: 0; /* Alinha o rodapé na parte inferior */
-    left: 0; /* Alinha o rodapé à esquerda */
+    position: static; /* Define a posição do rodapé como estática */
+    bottom: 0; /* Alinha o rodapé na parte inferior (sem efeito no position: static) */
+    left: 0; /* Alinha o rodapé à esquerda (sem efeito no position: static) */
     width: 100%; /* Faz o rodapé ocupar toda a largura da página */
     text-align: center; /* Centraliza o texto no rodapé */
     padding: 10px; /* Define o espaçamento interno do rodapé */
@@ -62,47 +26,86 @@ nav {
     color: black; /* Define a cor do texto como preto */
 }
 
+header {
+    background-color: black; /* Define a cor de fundo do cabeçalho como preto */
+    box-shadow: 0px 3px 10px #464646; /* Adiciona uma sombra ao cabeçalho */
+}
+
+.nav-bar {
+    display: flex; /* Utiliza flexbox para organizar os itens da barra de navegação */
+    justify-content: space-between; /* Distribui espaço entre os itens da barra de navegação */
+    padding: 1.5rem 6rem; /* Adiciona espaçamento interno à barra de navegação */
+}
+
+.logo {
+    display: flex; /* Utiliza flexbox para organizar o conteúdo do logo */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    width: 150px; /* Define a largura da área do logo */
+    height: 80px; /* Define a altura da área do logo */
+}
+
+.logo img {
+    width: 100%; /* Define a largura da imagem do logo para preencher totalmente o container */
+    height: 100%; /* Define a altura da imagem do logo para preencher totalmente o container */
+    object-fit: cover; /* Ajusta a imagem para cobrir o espaço sem distorção */
+}
+
+.nav-list {
+    display: flex; /* Utiliza flexbox para organizar a lista de navegação */
+    align-items: center; /* Alinha os itens da lista verticalmente no centro */
+}
+
+.nav-list ul {
+    display: flex; /* Utiliza flexbox para organizar os itens da lista não ordenada */
+    justify-content: center; /* Centraliza os itens da lista */
+    list-style: none; /* Remove os marcadores padrão da lista */
+}
+
+.nav-item {
+    margin: 0 15px; /* Define margem horizontal para os itens da navegação */
+    font-size: 22px; /* Define o tamanho da fonte dos itens da navegação */
+}
+
+.nav-link {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font: 1.15rem; /* Define o tamanho da fonte dos links */
+    color: #FFF; /* Define a cor dos links como branca */
+    font-weight: 400; /* Define o peso da fonte como regular (400) */
+}
+
+.mobile-menu-icon {
+    display: none; /* Esconde o ícone do menu móvel por padrão */
+}
+
+.mobile-menu {
+    display: none; /* Esconde o menu móvel por padrão */
+}
+
 /* Estilos para o texto no rodapé */
 .final p {
-    font-size: 17px; /* Define o tamanho da fonte dos parágrafos do rodapé */
-    color: #522c17; /* Define a cor do texto */
-    padding: 0px; /* Define o espaçamento interno dos parágrafos */
-    position: static; /* Define o rodapé em posição estática */
-    width: 100%; /* Faz o rodapé ocupar toda a largura da página */
-    text-align: center; /* Centraliza o conteúdo do rodapé */
-    padding: 18px; /* Define o espaçamento interno do rodapé */
-}
-
-/* Estilos para o título no cabeçalho */
-header h1 {
-    text-align: center; /* Centraliza o título */
-    font-size: 45px; /* Define o tamanho da fonte do título */
-    color: #522c17; /* Define a cor do texto do título */
-    padding: 40px; /* Define o espaçamento interno */
-}
-
-/* Estilos para os parágrafos no cabeçalho */
-header p {
-    text-align: center; /* Centraliza o parágrafo */
-    text-justify: inter-word; /* Justifica o texto entre palavras */
-    font-size: 18px; /* Define o tamanho da fonte do parágrafo */
-    color: #522c17; /* Define a cor do texto do parágrafo */
+    font-size: 17px; /* Define o tamanho da fonte dos parágrafos no rodapé */
+    color: #522c17; /* Define a cor do texto como marrom */
+    padding: 0px; /* Remove o espaçamento interno dos parágrafos */
+    position: static; /* Define a posição dos parágrafos como estática */
+    width: 100%; /* Faz os parágrafos ocuparem toda a largura da página */
+    text-align: center; /* Centraliza o texto dos parágrafos */
+    padding: 18px; /* Define o espaçamento interno dos parágrafos */
 }
 
 /* Estilos para as imagens */
-img {
+.img {
     width: 150px; /* Define a largura das imagens */
     height: 150px; /* Define a altura das imagens */
-    border-radius: 50%; /* Arredonda as bordas das imagens */
-    border: 5px solid #522c17; /* Adiciona uma borda nas imagens */
-    margin-top: -55px; /* Adiciona uma margem superior negativa */
+    border-radius: 50%; /* Arredonda as bordas das imagens para formar um círculo */
+    border: 5px solid #522c17; /* Adiciona uma borda sólida de 5px de cor marrom nas imagens */
+    margin-top: -55px; /* Adiciona uma margem superior negativa para ajustar a posição */
 }
 
 /* Estilos para o container principal */
 .container {
-    display: flex; /* Utiliza o flexbox para alinhar os elementos */
-    justify-content: center; /* Centraliza o conteúdo */
-    flex-wrap: wrap; /* Permite que os cards se empilhem em telas menores */
+    display: flex; /* Utiliza flexbox para alinhar os elementos no container */
+    justify-content: center; /* Centraliza os elementos dentro do container */
+    flex-wrap: wrap; /* Permite que os elementos se ajustem automaticamente para novas linhas em telas menores */
 }
 
 /* Estilos dos cards */
@@ -111,76 +114,167 @@ img {
     height: 500px; /* Define a altura dos cards */
     border-radius: 40px; /* Arredonda as bordas dos cards */
     margin: 25px; /* Adiciona margem ao redor dos cards */
-    background-color: #522c17; /* Define a cor de fundo dos cards */
+    background-color: #522c17; /* Define a cor de fundo dos cards como marrom */
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); /* Adiciona uma sombra aos cards */
 }
 
 /* Estilos para centralizar as imagens nos cards */
 .imagem {
-    display: flex; /* Utiliza o flexbox para alinhar a imagem */
+    display: flex; /* Utiliza flexbox para alinhar a imagem */
     justify-content: center; /* Centraliza a imagem */
 }
 
 /* Estilos para o texto dentro dos cards */
 .texto {
-    color: white; /* Define a cor do texto como branco */
+    color: white; /* Define a cor do texto como branca */
     text-align: center; /* Centraliza o texto */
     font-size: 20px; /* Define o tamanho da fonte do texto */
 }
 
 /* Estilos para parágrafos dentro de divs */
 div p {
-    color: white; /* Define a cor do texto dos parágrafos dentro de divs como branco */
+    color: white; /* Define a cor do texto dos parágrafos dentro de divs como branca */
     font-size: 15px; /* Define o tamanho da fonte dos parágrafos */
     padding: 25px; /* Define o espaçamento interno dos parágrafos */
+}
+
+h1 {
+    text-align: center; /* Centraliza o título h1 */
+    color: #522c17; /* Define a cor do texto h1 como marrom */
+}
+
+p {
+    text-align: center; /* Centraliza os parágrafos */
+    color: #522c17; /* Define a cor dos parágrafos como marrom */
 }
 
 /* Media Queries para responsividade */
 
 /* Para dispositivos menores, como smartphones */
 @media (max-width: 600px) {
-    header h1 {
-        font-size: 45px; /* Diminui o tamanho do título */
-    }
-
-    header p {
-        font-size: 18px; /* Diminui o tamanho do parágrafo */
-    }
-
     .card {
-        width: 90%; /* Ajusta a largura dos cards para ocupar mais espaço em telas pequenas */
+        width: 90%; /* Ajusta a largura dos cards para 90% da tela */
         height: auto; /* Ajusta a altura automaticamente */
     }
-
-    #menu li a {
-        padding: 6px; /* Reduz o espaçamento interno dos links do menu */
-        font-size: 13px;
-    }
-
     img {
         width: 120px; /* Reduz a largura das imagens */
         height: 120px; /* Reduz a altura das imagens */
+    }
+
+    .nav-bar {
+        padding: 1.5rem 4rem; /* Ajusta o espaçamento interno da barra de navegação */
+    }
+
+    .nav-item {
+        display: none; /* Esconde os itens da navegação em telas pequenas */
+        font-size: 15px; /* Define o tamanho da fonte dos itens da navegação */
+    }
+
+    .icon {
+        width: 100%; /* Ajusta a largura do ícone para 100% */
+        height: 100%; /* Ajusta a altura do ícone para 100% */
+        object-fit: cover; /* Ajusta o ícone para cobrir o espaço sem distorção */
+    }
+
+    .login-button {
+        display: none; /* Esconde o botão de login em telas pequenas */
+    }
+
+    .mobile-menu-icon {
+        display: block; /* Exibe o ícone do menu móvel em telas pequenas */
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent; /* Define o fundo do botão como transparente */
+        border: none; /* Remove a borda do botão */
+        cursor: pointer; /* Define o cursor como um ponteiro ao passar sobre o botão */
+    }
+
+    .mobile-menu ul {
+        display: flex; /* Utiliza flexbox para organizar os itens da lista no menu móvel */
+        flex-direction: column; /* Organiza os itens da lista em uma coluna */
+        text-align: center; /* Centraliza o texto dos itens */
+        padding-bottom: 1rem; /* Adiciona espaçamento na parte inferior */
+    }
+
+    .mobile-menu .nav-item {
+        display: block; /* Exibe os itens da navegação no menu móvel */
+        padding: 1.2rem; /* Adiciona espaçamento interno aos itens */
+    }
+
+    .mobile-menu .login-button {
+        display: block; /* Exibe o botão de login no menu móvel */
+        padding: 1rem 2rem; /* Adiciona espaçamento ao botão de login */
+    }
+
+    .mobile-menu .login-button {
+        width: 100%; /* Define a largura do botão de login para ocupar toda a tela */
+    }
+
+    .open {
+        display: block; /* Exibe o menu móvel quando aberto */
     }
 }
 
 /* Para tablets */
 @media (min-width: 601px) and (max-width: 1024px) {
     .card {
-        width: 40%; /* Ajusta a largura dos cards para 40% em telas de tablets */
+        width: 40%; /* Ajusta a largura dos cards para 40% em tablets */
         height: auto; /* Ajusta a altura automaticamente */
     }
 
-    header h1 {
-        font-size: 55px; /* Ajusta o tamanho do título */
+    .nav-bar {
+        padding: 1.5rem 4rem; /* Ajusta o espaçamento interno da barra de navegação */
     }
 
-    header p {
-        font-size: 22px; /* Ajusta o tamanho do parágrafo */
+    .nav-item {
+        display: none; /* Esconde os itens da navegação em telas pequenas */
+        font-size: 15px; /* Define o tamanho da fonte dos itens da navegação */
     }
 
-    #menu li a {
-        padding: 6px; /* Reduz o espaçamento interno dos links do menu */
-        font-size: 13px;
+    .icon {
+        width: 100%; /* Ajusta a largura do ícone para 100% */
+        height: 100%; /* Ajusta a altura do ícone para 100% */
+        object-fit: cover; /* Ajusta o ícone para cobrir o espaço sem distorção */
+    }
+
+    .login-button {
+        display: none; /* Esconde o botão de login em telas pequenas */
+    }
+
+    .mobile-menu-icon {
+        display: block; /* Exibe o ícone do menu móvel em telas pequenas */
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent; /* Define o fundo do botão como transparente */
+        border: none; /* Remove a borda do botão */
+        cursor: pointer; /* Define o cursor como um ponteiro ao passar sobre o botão */
+    }
+
+    .mobile-menu ul {
+        display: flex; /* Utiliza flexbox para organizar os itens da lista no menu móvel */
+        flex-direction: column; /* Organiza os itens da lista em uma coluna */
+        text-align: center; /* Centraliza o texto dos itens */
+        padding-bottom: 1rem; /* Adiciona espaçamento na parte inferior */
+    }
+
+    .mobile-menu .nav-item {
+        display: block; /* Exibe os itens da navegação no menu móvel */
+        padding: 1.2rem; /* Adiciona espaçamento interno aos itens */
+    }
+
+    .mobile-menu .login-button {
+        display: block; /* Exibe o botão de login no menu móvel */
+        padding: 1rem 2rem; /* Adiciona espaçamento ao botão de login */
+    }
+
+    .mobile-menu .login-button {
+        width: 100%; /* Define a largura do botão de login para ocupar toda a tela */
+    }
+
+    .open {
+        display: block; /* Exibe o menu móvel quando aberto */
     }
 }
 
