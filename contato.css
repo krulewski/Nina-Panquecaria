@@ -35,6 +35,10 @@ header {
     object-fit: cover; /* Ajusta a imagem para cobrir o espaço sem distorção */
 }
 
+.nav-list :hover{
+    color: green;
+}
+
 .nav-list {
     display: flex; /* Utiliza flexbox para organizar a lista de navegação */
     align-items: center; /* Alinha os itens da lista verticalmente no centro */
