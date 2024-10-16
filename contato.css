@@ -258,7 +258,13 @@ legend {
     .mapa {
         color: #522c17;
         text-align: center;
+        width: 100%;
     }
+
+    .mapa iframe {
+        width: 100%; /* Faz o iframe ocupar 100% da largura do container */
+        height: 300px; /* Ajusta a altura do iframe conforme necessário */
+      }
 }
 
 /* Para tablets */
@@ -307,6 +313,7 @@ legend {
         display: block; /* Exibe os itens da navegação no menu móvel */
         padding: 1.2rem; /* Adiciona espaçamento interno aos itens */
     }
+    
 
     .mobile-menu .login-button {
         display: block; /* Exibe o botão de login no menu móvel */
