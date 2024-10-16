@@ -167,21 +167,26 @@ legend {
 }
 
 .final {
-    color: #522c17;
-    font-size: 17px;
-    position: static;
-    width: 100%;
-    text-align: center;
-    padding: 11px;
-    display: flex; /* Alinha os itens em uma linha */
-    justify-content: center; /* Centraliza os ícones na horizontal */
-    gap: 20px; /* Espaçamento entre os ícones */
+    position: fixed; /* Fixa a posição dos ícones na tela */
+    bottom: 20px; /* Distância do fundo da tela */
+    right: 20px; /* Distância da direita da tela */
+    display: flex; /* Alinha os ícones em linha */
+    gap: 15px; /* Espaçamento entre os ícones */
+    z-index: 1000; /* Garante que os ícones fiquem acima de outros elementos */
 }
 
 .final img {
     width: 50px; /* Define a largura das imagens no footer */
     height: 50px; /* Define a altura das imagens no footer */
 }
+
+.mapa {
+    color: #522c17;
+    padding: 5px;
+    text-align: center;
+}
+
+
 
 /* Responsividade */
 
@@ -244,6 +249,11 @@ legend {
 
     .open {
         display: block; /* Exibe o menu móvel quando aberto */
+    }
+
+    .final img {
+        width: 35px; /* Define a largura das imagens no footer */
+        height: 35px; /* Define a altura das imagens no footer */
     }
 }
 
