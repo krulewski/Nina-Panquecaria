@@ -182,7 +182,6 @@ legend {
 
 .mapa {
     color: #522c17;
-    padding: 5px;
     text-align: center;
 }
 
@@ -254,6 +253,11 @@ legend {
     .final img {
         width: 35px; /* Define a largura das imagens no footer */
         height: 35px; /* Define a altura das imagens no footer */
+    }
+
+    .mapa {
+        color: #522c17;
+        text-align: center;
     }
 }
 
