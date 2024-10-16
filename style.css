@@ -29,6 +29,10 @@ header {
     height: 80px; /* Define a altura das imagens */
 }
 
+.nav-list :hover{
+    color: green;
+}
+
 .nav-list {
     display: flex; /* Exibe os itens da lista de navegação como flexíveis */
     align-items: center; /* Alinha os itens no centro verticalmente */
