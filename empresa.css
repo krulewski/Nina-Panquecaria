@@ -205,9 +205,10 @@ footer {
     }
 
     .borda {
-        border: 4px solid;
+        border: none;
         color: #522c17;
         margin: 0 10px;
+        border-radius: 0%;
     }
 
 }
