@@ -6,7 +6,6 @@
     <title>Nina Panquecaria</title>
     <link rel="stylesheet" href="contato.css">
     <link rel="shortcut icon" href="img/logo1.png"> 
-
 </head>
 
 <body>
@@ -19,11 +18,11 @@
     
             <div class="nav-list">
                 <ul>
-                    <li class="nav-item"><a href="index.html" target="_blank" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="empresa.html" target="_blank" class="nav-link">A empresa</a></li>
-                    <li class="nav-item"><a href="equipe.html" target="_blank" class="nav-link">A equipe</a></li>
-                    <li class="nav-item"><a href="historia.html" target="_blank" class="nav-link">História</a></li>
-                    <li class="nav-item"><a href="contato.html" target="_blank" class="nav-link">Contato</a></li>
+                    <li class="nav-item"><a href="index.html" target="" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="empresa.html" target="" class="nav-link">A empresa</a></li>
+                    <li class="nav-item"><a href="equipe.html" target="" class="nav-link">A equipe</a></li>
+                    <li class="nav-item"><a href="historia.html" target="" class="nav-link">História</a></li>
+                    <li class="nav-item"><a href="contato.html" target="" class="nav-link">Contato</a></li>
                 </ul>
             </div>
     
@@ -34,21 +33,20 @@
     
         <div class="mobile-menu">
             <ul>
-                <li class="nav-item"><a href="index.html" target="_blank" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="empresa.html" target="_blank" class="nav-link">A empresa</a></li>
-                <li class="nav-item"><a href="equipe.html" target="_blank" class="nav-link">A equipe</a></li>
-                <li class="nav-item"><a href="historia.html" target="_blank" class="nav-link">História</a></li>
-                <li class="nav-item"><a href="contato.html" target="_blank" class="nav-link">Contato</a></li>
+                <li class="nav-item"><a href="index.html" target="" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="empresa.html" target="" class="nav-link">A empresa</a></li>
+                <li class="nav-item"><a href="equipe.html" target="" class="nav-link">A equipe</a></li>
+                <li class="nav-item"><a href="historia.html" target="" class="nav-link">História</a></li>
+                <li class="nav-item"><a href="contato.html" target="" class="nav-link">Contato</a></li>
             </ul>
+        </div>
     </header>
 
 
-    <div class="container">
-        
-    </div>
+    <div class="container"></div>
 
     <div class="box">
-        <form action="">
+        <form id="pedidoForm">
             <fieldset>
                 <legend><b>Faça seu Pedido</b></legend><br>
 
@@ -68,7 +66,7 @@
                 </div><br>
 
                 <div class="inputBox">
-                    <input type="text" name="email" id="email" class="inputUser" required>
+                    <input type="email" name="email" id="email" class="inputUser" required>
                     <label for="email" class="labelInput">E-mail</label>
                 </div><br>
 
@@ -77,15 +75,14 @@
                     <label for="telefone" class="labelInput">Telefone</label>
                 </div><br>
 
-                <p>Sabor:</p>
+                <p>Panqueca Sabor:</p>
                 <input type="radio" id="nozes-com-doce-de-leite" name="sabor" value="nozes-com-doce-de-leite" required>
                 <label for="nozes-com-doce-de-leite">Brigadeiro de nozes</label><br><br>
 
-                    <label for="data"> <b>Data e Horário de retirada</b></label><br>
-                    <input type="datetime-local" name="data" id="data" required><br><br>
+                <label for="data"><b>Data e Horário de retirada</b></label><br>
+                <input type="datetime-local" name="data" id="data" required><br><br>
                 
                 <input type="submit" name="submit" id="submit"><br>
-
             </fieldset>
         </form>
     </div>    
@@ -110,5 +107,6 @@
     </footer>
 
     <script src="script.js"></script>
+    
  </body>
  </html>
