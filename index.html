@@ -6,46 +6,92 @@
     <title>Nina Panquecaria</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img/logo1.png"> 
-
 </head>
-
 <body>
     
     <header>
         <nav class="nav-bar">
             <div class="logo">
-                <h1><img src="img/Icon.png"></h1>
+                <h1><img src="img/Icon.png" alt="Nina Panquecaria"></h1>
             </div>
-    
             <div class="nav-list">
                 <ul>
-                    <li class="nav-item"><a href="index.html" target="_blank" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="empresa.html" target="_blank" class="nav-link">A empresa</a></li>
-                    <li class="nav-item"><a href="equipe.html" target="_blank" class="nav-link">A equipe</a></li>
-                    <li class="nav-item"><a href="historia.html" target="_blank" class="nav-link">História</a></li>
-                    <li class="nav-item"><a href="contato.html" target="_blank" class="nav-link">Contato</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="empresa.html" class="nav-link">A empresa</a></li>
+                    <li class="nav-item"><a href="equipe.html" class="nav-link">A equipe</a></li>
+                    <li class="nav-item"><a href="historia.html" class="nav-link">História</a></li>
+                    <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
                 </ul>
             </div>
-    
             <div class="mobile-menu-icon">
-                <button onclick="menuShow()"><img class="icon" src="img/menu_white_36dp.svg"></button>
+                <button onclick="menuShow()"><img class="icon" src="img/icons8-menu (1).svg" alt="Menu"></button>
             </div>
         </nav>
-    
         <div class="mobile-menu">
             <ul>
-                <li class="nav-item"><a href="index.html" target="_blank" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="empresa.html" target="_blank" class="nav-link">A empresa</a></li>
-                <li class="nav-item"><a href="equipe.html" target="_blank" class="nav-link">A equipe</a></li>
-                <li class="nav-item"><a href="historia.html" target="_blank" class="nav-link">História</a></li>
-                <li class="nav-item"><a href="contato.html" target="_blank" class="nav-link">Contato</a></li>
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="empresa.html" class="nav-link">A empresa</a></li>
+                <li class="nav-item"><a href="equipe.html" class="nav-link">A equipe</a></li>
+                <li class="nav-item"><a href="historia.html" class="nav-link">História</a></li>
+                <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
             </ul>
+        </div>
     </header>
+
+    <div class="slider">
+
+        <div class="sliders">
+            <!-- Radio buttons -->
+            <input type="radio" name="radio-bt" id="radio1">
+            <input type="radio" name="radio-bt" id="radio2">
+            <input type="radio" name="radio-bt" id="radio3">
+            <input type="radio" name="radio-bt" id="radio4">
+            <input type="radio" name="radio-bt" id="radio5">
+            <!-- Fim radio buttons -->
+
+            <!-- Slide imagens -->
+            <div class="slide first">
+                <img src="img/p1.jpeg" alt="Slide 1">
+            </div>
+            <div class="slide">
+                <img src="img/p2.jpeg" alt="Slide 2">
+            </div>
+            <div class="slide">
+                <img src="img/p3.jpeg" alt="Slide 3">
+            </div>
+            <div class="slide">
+                <img src="img/p4.jpeg" alt="Slide 4">
+            </div>
+            <div class="slide">
+                <img src="img/p5.jpeg" alt="Slide 5">
+            </div>
+            <!-- Fim slide imagens -->
+
+            <!-- Navegação auto -->
+            <div class="navegacao-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+                <div class="auto-btn5"></div>
+            </div>
+
+        </div>
+
+        <div class="navegacao-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+            <label for="radio5" class="manual-btn"></label>
+        </div>
+
+    </div>
 
     <footer>
         <div class="copy">© 2024 Nina Panquecaria. All rights reserved.</div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script2.js"></script>
 </body>
 </html>

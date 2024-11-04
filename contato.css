@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    background-color: black; /* Define a cor de fundo do cabeçalho como preto */
+    background-color: #faf0e5; /* Define a cor de fundo do cabeçalho como preto */
     box-shadow: 0px 3px 10px #464646; /* Adiciona uma sombra ao cabeçalho */
 }
 
@@ -58,7 +58,7 @@ header {
 .nav-link {
     text-decoration: none; /* Remove o sublinhado dos links */
     font: 1.15rem; /* Define o tamanho da fonte dos links */
-    color: #FFF; /* Define a cor dos links como branca */
+    color: #522c17; /* Define a cor dos links como branca */
     font-weight: 400; /* Define o peso da fonte como regular (400) */
 }
 

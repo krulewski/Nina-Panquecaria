@@ -2,10 +2,10 @@ function menuShow() {
     let menuMobile = document.querySelector('.mobile-menu');
     if (menuMobile.classList.contains('open')) {
         menuMobile.classList.remove('open');
-        document.querySelector('.icon').src = "img/menu_white_36dp.svg";
+        document.querySelector('.icon').src = "img/icons8-menu (1).svg";
     } else {
         menuMobile.classList.add('open');
-        document.querySelector('.icon').src = "img/close_white_36dp.svg";
+        document.querySelector('.icon').src = "img/icons8-close.svg";
     }
 }
 
@@ -27,3 +27,6 @@ document.getElementById('pedidoForm').addEventListener('submit', function(e) {
     // Redirecionar para o WhatsApp
     window.open(whatsappUrl, '_blank');
 });
+
+
+
