@@ -30,7 +30,7 @@ header {
 .logo {
     display: flex; /* Exibe o logo como flexível */
     align-items: center; /* Alinha os itens no centro verticalmente */
-    width: 150px; /* Define a largura das imagens */
+    width: 300px; /* Define a largura das imagens */
     height: 80px; /* Define a altura das imagens */
 }
 
@@ -51,7 +51,7 @@ header {
 
 .nav-item {
     margin: 0 15px; /* Adiciona margem lateral entre os itens da lista de navegação */
-    font-size: 22px; /* Define o tamanho da fonte dos itens da lista */
+    font-size: 33px; /* Define o tamanho da fonte dos itens da lista */
 }
 
 .nav-link {
@@ -94,6 +94,7 @@ footer {
 .sobre p, .missao p, .visao p {
     text-align: justify; /* Justifica o texto dos parágrafos */
     margin: 0 5px; /* Adiciona uma margem nas laterais para espaçar do limite da tela */
+    font-size: 30px;
 }
 
 /* Para garantir espaçamento consistente em todas as seções */
@@ -110,13 +111,14 @@ footer {
 .valores ul {
     text-align: justify; /* Justifica o texto dos parágrafos */
     margin: 0  20px; /* Adiciona uma margem nas laterais para espaçar do limite da tela */
+    font-size: 30px;
 }
 
 .borda {
     border: 4px solid;
     color: #522c17;
     margin: 0 450px;
-    border-radius: 5%;
+    border-radius: 1%;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
@@ -186,6 +188,7 @@ footer {
     .sobre p, .missao p, .visao p {
         text-align: justify; /* Justifica o texto dos parágrafos */
         margin: 0 15px; /* Adiciona uma margem nas laterais para espaçar do limite da tela */
+        font-size: 25px;
     }
 
     /* Para garantir espaçamento consistente em todas as seções */
@@ -202,6 +205,7 @@ footer {
     .valores ul {
         text-align: justify; /* Justifica o texto dos parágrafos */
         margin: 0 18px; /* Adiciona uma margem nas laterais para espaçar do limite da tela */
+        font-size: 25px;
     }
 
     .borda {
@@ -242,13 +246,13 @@ footer {
 
 .valores ul {
     text-align: justify; /* Justifica o texto dos parágrafos */
-    margin: 0  20px; /* Adiciona uma margem nas laterais para espaçar do limite da tela */
+    margin: 0  30px; /* Adiciona uma margem nas laterais para espaçar do limite da tela */
 }
 
 .borda {
     border: 4px solid;
     color: #522c17;
-    margin: 0 450px;
+    margin: 80px 200px;
 }
     
 }

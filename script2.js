@@ -7,7 +7,7 @@ startSlider();
 function startSlider() {
     setInterval(function () {
         nextSlide();
-    }, 2000); // Define o intervalo de tempo entre as trocas (2 segundos)
+    }, 3000); // Define o intervalo de tempo entre as trocas (2 segundos)
 }
 
 function nextSlide() {

@@ -25,7 +25,7 @@ header {
 .logo {
     display: flex;
     align-items: center;
-    width: 150px;
+    width: 300px;
     height: 80px;
 }
 
@@ -46,7 +46,7 @@ header {
 
 .nav-item {
     margin: 0 15px;
-    font-size: 22px;
+    font-size: 33px;
 }
 
 .nav-link {
@@ -108,7 +108,7 @@ footer {
 
 .slide img {
     width: 100%; /* Ajustando a largura para 100% do slide */
-    height: auto; /* Mantendo a proporção da imagem */
+    height: 100%; /* Mantendo a proporção da imagem */
 }
 
 .navegacao-manual {
@@ -195,6 +195,13 @@ footer {
     background-color: transparent;
 }
 
+.frase p {
+    padding: 35px;
+    color: #522c17;
+    font-size: 30px;
+    text-align: center;
+}
+
 /* Responsividade para smartphones */
 @media (max-width: 600px) { 
     .img {
@@ -276,6 +283,19 @@ footer {
         border-radius: 10px;
         cursor: pointer;
         transition: 1s;
+    }
+
+    .frase p {
+        padding: 35px;
+        color: #522c17;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .sliders {
+        width: 500%; /* Mantenha a largura maior para o efeito do slider */
+        height: 50%; /* Altura responsiva */
+        display:flex;
     }
 }
 

@@ -25,7 +25,7 @@ header {
 .logo {
     display: flex; /* Exibe o logo como flexível */
     align-items: center; /* Alinha os itens no centro verticalmente */
-    width: 150px; /* Define a largura das imagens */
+    width: 300px; /* Define a largura das imagens */
     height: 80px; /* Define a altura das imagens */
 }
 
@@ -46,7 +46,7 @@ header {
 
 .nav-item {
     margin: 0 15px; /* Adiciona margem lateral entre os itens da lista de navegação */
-    font-size: 22px; /* Define o tamanho da fonte dos itens da lista */
+    font-size: 33px; /* Define o tamanho da fonte dos itens da lista */
 }
 
 .nav-link {
@@ -70,10 +70,18 @@ header {
 }
 
 img {
-    max-width: 100%; /* Faz com que a imagem se ajuste ao tamanho máximo da tela */
+    margin: 10px;
+    max-width: 60%; /* Faz com que a imagem se ajuste ao tamanho máximo da tela */
     height: auto;    /* Mantém a proporção original da imagem */
     border-radius: 10px; /* Arredonda os cantos da imagem */
 }
+
+.img2 img, .img img {
+    width: 100%; /* Ajusta a largura para ocupar 100% do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Mantém os cantos arredondados */
+}
+
 
 footer {
     position: static; /* Define o rodapé como estático */
@@ -144,6 +152,20 @@ footer {
     .open {
         display: block; /* Exibe o menu quando o ícone é clicado */
     }
+
+    img {
+        margin: 10px;
+        max-width: 96%; /* Faz com que a imagem se ajuste ao tamanho máximo da tela */
+        height: auto;    /* Mantém a proporção original da imagem */
+        border-radius: 10px; /* Arredonda os cantos da imagem */
+    }
+    
+    .img2 img, .img img {
+        width: 100%; /* Ajusta a largura para ocupar 100% do contêiner */
+        height: auto; /* Mantém a proporção da imagem */
+        border-radius: 10px; /* Mantém os cantos arredondados */
+    }
+    
 }
 
 /* Para tablets (entre 601px e 1024px) */
@@ -204,6 +226,19 @@ footer {
     .open {
         display: block; /* Exibe o menu quando o ícone é clicado */
     }
+
+    img {
+        margin: 10px;
+        max-width: 96%; /* Faz com que a imagem se ajuste ao tamanho máximo da tela */
+        height: auto;    /* Mantém a proporção original da imagem */
+        border-radius: 10px; /* Arredonda os cantos da imagem */
+    }
+    
+    .img2 img, .img img {
+        width: 100%; /* Ajusta a largura para ocupar 100% do contêiner */
+        height: auto; /* Mantém a proporção da imagem */
+        border-radius: 10px; /* Mantém os cantos arredondados */
+    }
 }
 
 /* Para desktops (maiores que 1024px) */
@@ -216,5 +251,11 @@ footer {
         padding: 10px; /* Mantém o padding original do rodapé */
     }
 
+    .logo {
+        display: flex; /* Utiliza flexbox para organizar o conteúdo do logo */
+        align-items: center; /* Alinha os itens verticalmente no centro */
+        width: 800px; /* Define a largura da área do logo */
+        height: 80px; /* Define a altura da área do logo */
+    }
     
 }

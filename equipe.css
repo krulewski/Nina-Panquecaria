@@ -27,7 +27,7 @@ body {
 }
 
 header {
-    background-color: faf0e5; /* Define a cor de fundo do cabeçalho como preto */
+    background-color: #faf0e5; /* Define a cor de fundo do cabeçalho como preto */
     box-shadow: 0px 3px 10px #464646; /* Adiciona uma sombra ao cabeçalho */
 }
 
@@ -40,12 +40,12 @@ header {
 .logo {
     display: flex; /* Utiliza flexbox para organizar o conteúdo do logo */
     align-items: center; /* Alinha os itens verticalmente no centro */
-    width: 150px; /* Define a largura da área do logo */
+    width: 300px; /* Define a largura da área do logo */
     height: 80px; /* Define a altura da área do logo */
 }
 
 .logo img {
-    width: 100%; /* Define a largura da imagem do logo para preencher totalmente o container */
+    width: 120%; /* Define a largura da imagem do logo para preencher totalmente o container */
     height: 100%; /* Define a altura da imagem do logo para preencher totalmente o container */
     object-fit: cover; /* Ajusta a imagem para cobrir o espaço sem distorção */
 }
@@ -67,7 +67,7 @@ header {
 
 .nav-item {
     margin: 0 15px; /* Define margem horizontal para os itens da navegação */
-    font-size: 22px; /* Define o tamanho da fonte dos itens da navegação */
+    font-size: 33px; /* Define o tamanho da fonte dos itens da navegação */
 }
 
 .nav-link {
@@ -87,7 +87,7 @@ header {
 
 /* Estilos para o texto no rodapé */
 .final p {
-    font-size: 17px; /* Define o tamanho da fonte dos parágrafos no rodapé */
+    font-size: 35px; /* Define o tamanho da fonte dos parágrafos no rodapé */
     color: #522c17; /* Define a cor do texto como marrom */
     padding: 0px; /* Remove o espaçamento interno dos parágrafos */
     position: static; /* Define a posição dos parágrafos como estática */
@@ -138,18 +138,21 @@ header {
 /* Estilos para parágrafos dentro de divs */
 div p {
     color: white; /* Define a cor do texto dos parágrafos dentro de divs como branca */
-    font-size: 15px; /* Define o tamanho da fonte dos parágrafos */
-    padding: 25px; /* Define o espaçamento interno dos parágrafos */
+    font-size: 25px; /* Define o tamanho da fonte dos parágrafos */
+    padding: 5px; /* Define o espaçamento interno dos parágrafos */
 }
 
 h1 {
+    margin: 25px;
     text-align: center; /* Centraliza o título h1 */
     color: #522c17; /* Define a cor do texto h1 como marrom */
+    font-size: 40px;
 }
 
 p {
     text-align: center; /* Centraliza os parágrafos */
     color: #522c17; /* Define a cor dos parágrafos como marrom */
+    font-size: 35px;
 }
 
 /* Media Queries para responsividade */
@@ -217,6 +220,35 @@ p {
 
     .open {
         display: block; /* Exibe o menu móvel quando aberto */
+    }
+
+    h1 {
+        margin: 25px;
+        text-align: center; /* Centraliza o título h1 */
+        color: #522c17; /* Define a cor do texto h1 como marrom */
+        font-size: 25px;
+    }
+    
+    p {
+        text-align: center; /* Centraliza os parágrafos */
+        color: #522c17; /* Define a cor dos parágrafos como marrom */
+        font-size: 25px;
+    }
+
+    div p {
+        color: white; /* Define a cor do texto dos parágrafos dentro de divs como branca */
+        font-size: 25px; /* Define o tamanho da fonte dos parágrafos */
+        padding: 5px; /* Define o espaçamento interno dos parágrafos */
+    }
+
+    .final p {
+        font-size: 25px; /* Define o tamanho da fonte dos parágrafos no rodapé */
+        color: #522c17; /* Define a cor do texto como marrom */
+        padding: 0px; /* Remove o espaçamento interno dos parágrafos */
+        position: static; /* Define a posição dos parágrafos como estática */
+        width: 100%; /* Faz os parágrafos ocuparem toda a largura da página */
+        text-align: center; /* Centraliza o texto dos parágrafos */
+        padding: 18px; /* Define o espaçamento interno dos parágrafos */
     }
 }
 

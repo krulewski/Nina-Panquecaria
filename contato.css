@@ -25,7 +25,7 @@ header {
 .logo {
     display: flex; /* Utiliza flexbox para organizar o conteúdo do logo */
     align-items: center; /* Alinha os itens verticalmente no centro */
-    width: 150px; /* Define a largura da área do logo */
+    width: 300px; /* Define a largura da área do logo */
     height: 80px; /* Define a altura da área do logo */
 }
 
@@ -52,7 +52,7 @@ header {
 
 .nav-item {
     margin: 0 15px; /* Define margem horizontal para os itens da navegação */
-    font-size: 22px; /* Define o tamanho da fonte dos itens da navegação */
+    font-size: 33px; /* Define o tamanho da fonte dos itens da navegação */
 }
 
 .nav-link {
@@ -91,9 +91,10 @@ header {
     color: white; /* Define a cor do texto como branco */
     padding: 20px; /* Define o espaçamento interno da caixa */
     border-radius: 20px; /* Arredonda as bordas da caixa */
-    max-width: 500px; /* Define a largura máxima da caixa */
+    max-width: 800px; /* Define a largura máxima da caixa */
     margin: 20px auto; /* Centraliza a caixa na página com margem automática */
     margin-top: -5px;
+    font-size: 33px;
 }
 
 /* Estilizar o formulário */
@@ -101,6 +102,7 @@ fieldset {
     border: 3px solid #f1e9df; /* Define uma borda ao redor do fieldset */
     border-radius: 10px; /* Arredonda as bordas do fieldset */
     padding: 20px; /* Define o espaçamento interno do fieldset */
+    font-size: 33px;
 }
 
 legend {
@@ -122,7 +124,7 @@ legend {
     border-bottom: 1px solid white; /* Adiciona uma borda inferior branca */
     outline: none; /* Remove o contorno ao focar no campo */
     color: white; /* Define a cor do texto como branco */
-    font-size: 15px; /* Define o tamanho da fonte */
+    font-size: 33px; /* Define o tamanho da fonte */
     width: 100%; /* Faz o input ocupar toda a largura disponível */
     padding: 10px; /* Define o espaçamento interno do input */
 }
@@ -138,7 +140,7 @@ legend {
 .inputUser:focus ~ .labelInput, 
 .inputUser:valid ~ .labelInput {
     top: -20px; /* Move a label para cima quando o input estiver focado ou válido */
-    font-size: 12px; /* Diminui o tamanho da fonte da label */
+    font-size: 20px; /* Diminui o tamanho da fonte da label */
     color: white; /* Define a cor da label como branco */
 }
 
@@ -147,7 +149,7 @@ legend {
     padding: 8px; /* Define o espaçamento interno */
     border-radius: 10px; /* Arredonda as bordas */
     outline: none; /* Remove o contorno ao focar no campo */
-    font-size: 15px; /* Define o tamanho da fonte */
+    font-size: 33px; /* Define o tamanho da fonte */
     width: 100%; /* Faz o input ocupar toda a largura disponível */
 }
 
@@ -157,7 +159,7 @@ legend {
     border: none; /* Remove as bordas do botão */
     padding: 15px; /* Define o espaçamento interno do botão */
     color: white; /* Define a cor do texto do botão como branco */
-    font-size: 15px; /* Define o tamanho da fonte */
+    font-size: 33px; /* Define o tamanho da fonte */
     cursor: pointer; /* Altera o cursor para o ícone de clique */
     border-radius: 10px; /* Arredonda as bordas do botão */
 }
@@ -176,8 +178,8 @@ legend {
 }
 
 .final img {
-    width: 50px; /* Define a largura das imagens no footer */
-    height: 50px; /* Define a altura das imagens no footer */
+    width: 100px; /* Define a largura das imagens no footer */
+    height: 100px; /* Define a altura das imagens no footer */
 }
 
 .mapa {
@@ -193,8 +195,10 @@ legend {
 @media screen and (max-width: 768px) {
     
     .box {
+        max-width: 500px; /* Define a largura máxima da caixa */
         width: 90%; /* Ajusta a largura da caixa para 90% em dispositivos móveis */
         padding: 15px; /* Reduz o espaçamento interno da caixa */
+        font-size: 15px;
     }
     .nav-bar {
         padding: 1.5rem 4rem; /* Ajusta o espaçamento interno da barra de navegação */
@@ -264,7 +268,53 @@ legend {
     .mapa iframe {
         width: 100%; /* Faz o iframe ocupar 100% da largura do container */
         height: 300px; /* Ajusta a altura do iframe conforme necessário */
-      }
+    }
+
+    fieldset {
+        border: 3px solid #f1e9df; /* Define uma borda ao redor do fieldset */
+        border-radius: 10px; /* Arredonda as bordas do fieldset */
+        padding: 20px; /* Define o espaçamento interno do fieldset */
+        font-size: 15px;
+    }
+
+    #data {
+        border: none; /* Remove as bordas padrão */
+        padding: 8px; /* Define o espaçamento interno */
+        border-radius: 10px; /* Arredonda as bordas */
+        outline: none; /* Remove o contorno ao focar no campo */
+        font-size: 15px; /* Define o tamanho da fonte */
+        width: 100%; /* Faz o input ocupar toda a largura disponível */
+    }
+
+    #submit {
+        background: #947d60; /* Define a cor de fundo do botão de submissão */
+        width: 100%; /* Faz o botão ocupar toda a largura disponível */
+        border: none; /* Remove as bordas do botão */
+        padding: 15px; /* Define o espaçamento interno do botão */
+        color: white; /* Define a cor do texto do botão como branco */
+        font-size: 15px; /* Define o tamanho da fonte */
+        cursor: pointer; /* Altera o cursor para o ícone de clique */
+        border-radius: 10px; /* Arredonda as bordas do botão */
+    }
+
+    .inputUser {
+        background: none; /* Remove o fundo do campo de input */
+        border: none; /* Remove as bordas padrão do input */
+        border-bottom: 1px solid white; /* Adiciona uma borda inferior branca */
+        outline: none; /* Remove o contorno ao focar no campo */
+        color: white; /* Define a cor do texto como branco */
+        font-size: 15px; /* Define o tamanho da fonte */
+        width: 100%; /* Faz o input ocupar toda a largura disponível */
+        padding: 10px; /* Define o espaçamento interno do input */
+    }
+
+    .inputUser:focus ~ .labelInput, 
+    .inputUser:valid ~ .labelInput {
+        top: -20px; /* Move a label para cima quando o input estiver focado ou válido */
+        font-size: 12px; /* Diminui o tamanho da fonte da label */
+        color: white; /* Define a cor da label como branco */
+}
+
 }
 
 /* Para tablets */
@@ -330,9 +380,3 @@ legend {
 
 }
 
-/* Para desktops */
-@media screen and (min-width: 1025px) {
-    .box {
-        width: 30%; /* Ajusta a largura da caixa para 30% em desktops */
-    }
-}
