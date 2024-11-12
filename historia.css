@@ -242,20 +242,20 @@ footer {
 }
 
 /* Para desktops (maiores que 1024px) */
-@media (min-width: 1025px) {
-    .img {
-        padding: 10px; /* Mantém o padding original ao redor da imagem */
+/* Ajustes específicos para telas entre 1025px e 1278px */
+@media (min-width: 1025px) and (max-width: 1278px) {
+    .nav-bar {
+        padding: 1rem 3rem; /* Reduz o padding para economizar espaço */
     }
 
-    footer {
-        padding: 10px; /* Mantém o padding original do rodapé */
+    .nav-item {
+        margin: 0 8px; /* Diminui a margem entre os itens para caber melhor */
+        font-size: 26px; /* Reduz o tamanho da fonte */
     }
 
     .logo {
-        display: flex; /* Utiliza flexbox para organizar o conteúdo do logo */
-        align-items: center; /* Alinha os itens verticalmente no centro */
-        width: 800px; /* Define a largura da área do logo */
-        height: 80px; /* Define a altura da área do logo */
+        width: 300px; /* Ajusta a largura do logo para economizar espaço */
+        height: auto; /* Mantém a proporção do logo */
     }
-    
 }
+
